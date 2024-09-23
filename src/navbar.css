@@ -1,0 +1,24 @@
+.nav-button {
+    border: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-radius: 0;
+    transition: border-bottom 0.2s;
+    border-bottom: 0px solid #0099FF;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.nav-button:hover {
+    border-bottom: 2px solid #0099FF;
+}
+
+nav {
+    text-transform: uppercase;
+    color: #1E2A45;
+}
