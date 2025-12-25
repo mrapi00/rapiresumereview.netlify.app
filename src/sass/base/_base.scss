@@ -10,3 +10,75 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
+
+/* Testimonials styling: center, constrain width, and style quote/attribution */
+.testimonial {
+  text-align: center;
+  max-width: 76rem; /* ~760px (1rem = 10px in this project) */
+  margin: 1.6rem auto;
+  padding: 0 1.6rem;
+}
+
+.testimonial blockquote {
+  margin: 0 auto 1.2rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  max-width: 66rem;
+}
+
+.testimonial p {
+  margin: 0;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+/* Inline star SVG styling */
+.testimonial-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial-stars svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #f5c518; /* gold */
+  vertical-align: middle;
+}
+
+/* Visually hidden helper for accessibility */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Inline LinkedIn icon beside name */
+.social-inline {
+  margin-left: 0.4rem;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* superscript-like tiny icon (no background/border) */
+.social-inline .fa {
+  font-size: 1.2rem; /* small */
+  display: inline-block;
+  transform: translateY(-0.5rem); /* raise to look like superscript */
+  line-height: 1;
+  /* Option A: subtle rectangular border without a filled background */
+  padding: 0.08rem 0.16rem; /* tiny spacing so border doesn't touch glyph */
+  border: 1px solid #000; /* black border */
+  border-radius: 3px; /* slight rounding */
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.name-with-link { display: inline-flex; align-items: baseline; gap: 0.2rem; }
